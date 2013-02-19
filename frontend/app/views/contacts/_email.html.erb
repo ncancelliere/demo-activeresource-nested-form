@@ -1,0 +1,10 @@
+<div class="email">
+  <p>
+    <%=t 'activemodel.models.email' %>
+    <%= hidden_field_tag "contact[emails_attributes][#{email_counter}][id]", email.id if email.id.present? %>
+    <%= text_field_tag "contact[emails_attributes][#{email_counter}][address]", email.try(:address) %>
+    <% if email.id.present? %>
+      <%= check_box_tag "contact[emails_attributes][#{email_counter}][_destroy]" %> <%=t 'delete'  %>
+    <% end %>
+  </p>
+</div>

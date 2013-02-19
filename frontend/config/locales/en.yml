@@ -1,0 +1,25 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  activemodel:
+    models:
+      contact: 'Contact'
+      address: 'Address'
+      email: 'E-mail'
+    attributes:
+      contact:
+        first_name: 'First Name'
+        last_name: 'Last Name'
+        dob: 'Date of Birth'
+      addresses:
+        street_1: 'Street 1'
+        street_2: 'Street 2'
+        city: 'City'
+        state: 'State'
+        zip: 'Zipcode'
+      emails:
+        address: 'E-mail'
+  new_contact: 'New Contact'
+  edit_contact: 'Edit Contact'
+  delete: 'delete'

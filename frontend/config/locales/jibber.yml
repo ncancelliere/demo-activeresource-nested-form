@@ -1,0 +1,24 @@
+jibber:
+  activemodel:
+    models:
+      contact: 'Jabbaer'
+      address: 'Addjer'
+      email: 'Ejer'
+    attributes:
+      contact:
+        first_name: 'Jib'
+        last_name: 'Jab'
+        dob: 'Doo-dad'
+        addresses: 'Addjers'
+        emails: 'Ejers'
+      addresses:
+        street_1: 'Nib'
+        street_2: 'Nab'
+        city: 'Hoodad'
+        state: 'Sab'
+        zip: 'Zab'
+      emails:
+        address: 'Ejer'
+  new_contact: 'Voo Jabbaer'
+  edit_contact: 'Moot Jabbaer'
+  delete: 'diji'

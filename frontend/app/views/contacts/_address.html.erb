@@ -1,0 +1,34 @@
+<div class="address">
+  <%= hidden_field_tag "contact[addresses_attributes][#{address_counter}][id]", address.id if address.id.present? %>
+  <p>
+    <%=t ('activemodel.models.address') %>
+    <% if address.id.present? %>
+      <%=  check_box_tag "contact[addresses_attributes][#{address_counter}][_destroy]" %> <%=t 'delete' %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= label_tag t('activemodel.attributes.addresses.street_1') %>
+    <%= text_field_tag "contact[addresses_attributes][#{address_counter}][street_1]", address.try(:street_1) %>
+  </p>
+
+  <p>
+    <%= label_tag t('activemodel.attributes.addresses.street_2') %>
+    <%= text_field_tag "contact[addresses_attributes][#{address_counter}][street_2]", address.try(:street_2) %>
+  </p>
+
+  <p>
+    <%= label_tag t('activemodel.attributes.addresses.city') %>
+    <%= text_field_tag "contact[addresses_attributes][#{address_counter}][city]", address.try(:city) %>
+  </p>
+
+  <p>
+    <%= label_tag t('activemodel.attributes.addresses.state') %>
+    <%= text_field_tag "contact[addresses_attributes][#{address_counter}][state]", address.try(:state) %>
+  </p>
+
+  <p>
+    <%= label_tag t('activemodel.attributes.addresses.zip') %>
+    <%= text_field_tag "contact[addresses_attributes][#{address_counter}][zip]", address.try(:zip) %>
+  </p>
+</div>
